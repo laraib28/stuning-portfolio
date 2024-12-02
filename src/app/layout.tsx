@@ -5,13 +5,15 @@ import ResponsiveNav from "./components/home/navbar/responsiveNav";
 import Footer from "./components/home/footer/footer";
 import ScrollToTop from "./components/helper/scrolltoTop/scrollToTop";
 
-const font = ({
-  weight: ['100','200','300','400','500','600','700','800']
+// Configure the Sora font
+const soraFont = Sora({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"], // Ensure proper subsets for font usage
 });
 
 export const metadata: Metadata = {
   title: "stuning-portfolio",
-  description: "stuning-portfolio with next js",
+  description: "stuning-portfolio with Next.js",
 };
 
 export default function RootLayout({
@@ -20,13 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
-        <ResponsiveNav/>
+    <html lang="en" className={soraFont.className}>
+      <body>
+        <ResponsiveNav />
         {children}
-        <Footer/>
-        <ScrollToTop/>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

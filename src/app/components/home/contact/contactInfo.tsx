@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope, FaMap, FaPhone, FaVoicemail } from 'react-icons/fa'
+import { FaEnvelope, FaMap, FaPhone } from 'react-icons/fa'
 import { contactData } from '../data/data'
 
 const ContactInfo = () => {

@@ -1,4 +1,4 @@
-import { title } from "process";
+// import { title } from "process";
 
 export const BaseInfo ={
     name:"Laraib",
@@ -150,15 +150,6 @@ export const skillsData = [
     
 ];
 
-// export const blogs =[
-//     {
-//         id:1,
-//         title:'Top Web Development Trends to Watch in 2024',
-//         summary:'Explore the key web development trends for 2024 and their impact on your business.',
-//         date: 'August 18, 2024',
-//         image: 
-//     }
-// 
 export const contactData = {
     phone: '03252185883',
     email: 'laraibadnan297@gmail.com',

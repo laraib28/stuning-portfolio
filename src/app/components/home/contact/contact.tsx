@@ -1,5 +1,4 @@
 import React from 'react'
-import SectionHeading from '../../helper/sectionHeading'
 import ContactForm from './contactForm'
 import ContactInfo from './contactInfo'
 
