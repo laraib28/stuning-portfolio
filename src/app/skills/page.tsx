@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeading from '../../helper/sectionHeading'
-import { skillsData } from '../data/data'
+import SectionHeading from '../components/helper/sectionHeading'
+import { skillsData } from '../components/home/data/data'
 import Skillscard from './skillscard'
 
 

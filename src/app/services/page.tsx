@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeading from '../../helper/sectionHeading'
-import { servicesData } from '../data/data'
+import SectionHeading from '../components/helper/sectionHeading'
+import { servicesData } from '../components/home/data/data'
 import ServiceCard from './serviceCard'
 
 const Services = () => {

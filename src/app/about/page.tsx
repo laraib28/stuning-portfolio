@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeading from '../../helper/sectionHeading';
+import SectionHeading from '../components/helper/sectionHeading';
 import { aboutInfo } from '@/app/components/home/data/data';
 import { FaCheck } from 'react-icons/fa';
 

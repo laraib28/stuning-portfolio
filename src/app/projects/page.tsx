@@ -1,10 +1,10 @@
 import React from 'react'
-import SectionHeading from '../../helper/sectionHeading'
-import { projectsData } from '../data/data'
+import SectionHeading from '../components/helper/sectionHeading'
+import { projectsData } from '../components/home/data/data'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Project = () => {
+const projects = () => {
   return (
     <div className='pt-16 pb-16 bg-[#050709]'>
       <SectionHeading>My Projects</SectionHeading>
@@ -29,4 +29,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default projects

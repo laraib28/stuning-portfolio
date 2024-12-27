@@ -1,23 +1,17 @@
 import React from 'react';
-import Hero from '../hero/hero';
-import About from '../about/about';
-import Services from '../services/services';
-import Project from '../project/project';
-import Skills from '../skills/skills';
+import Hero from '../hero/page';
+import About from '../../../about/page';
+import Services from '../../../services/page';
+import Project from '../../../projects/page';
+import Skills from '../../../skills/page';
 // import Blog from '../blog/blog';
-import Contact from '../contact/contact'
+import Contact from '../../../contact/page'
 
 
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      <Hero />
-      <About />
-      <Services/>
-      <Project/>
-      <Skills/>
-      {/* <Blog/> */}
-      <Contact/>
+     
     </div>
   );
 };
