@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "c32616e0-7a1e-4636-8175-078c3ed0f3b8"
+      }
+    },
+    "android": {
+      "package": "com.laraibadnan.stuningportfolio"
+    }
+  }
+}

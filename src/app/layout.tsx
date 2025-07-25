@@ -14,6 +14,8 @@ const soraFont = Sora({
 export const metadata: Metadata = {
   title: "stuning-portfolio",
   description: "stuning-portfolio with Next.js",
+  manifest: "/manifest.json", // 🔥 Important for PWA support
+  themeColor: "#000000",      // Optional for status bar theming on mobile
 };
 
 export default function RootLayout({
@@ -23,11 +25,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={soraFont.className}>
+      <head>
+        {/* 🔥 PWA Meta Tags */}
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body>
         <ResponsiveNav />
         {children}
         <Footer />
         <ScrollToTop />
+
+        {/* 🔥 Service Worker Registration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/service-worker.js')
+                    .then(reg => console.log('Service worker registered.', reg))
+                    .catch(err => console.error('Service worker registration failed:', err));
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   );
